@@ -1,0 +1,28 @@
+.product-filter-card{
+    background-color: var(--app-color-bg-tertiary);
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 32px;
+    border-radius: 5px;
+}
+
+.product-filter-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.product-filter-form input{
+    border: 1px solid var(--app-color-border);
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.product-filter-form input::placeholder{
+    color: var(--app-color-font-secondary);
+}

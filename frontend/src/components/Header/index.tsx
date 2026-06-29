@@ -7,7 +7,6 @@ export default function Header() {
                 <h1>DSFilter</h1>
                 <h3>6 produto(s)</h3>
             </div>
-
         </header>
     );
 
