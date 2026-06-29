@@ -1,6 +1,7 @@
 import Header from "./components/Header";
-import ProductFilterCard from "./components/Header/ProductFilterCard";
-import "./index.css";
+import ProductFilterCard from "./components/ProductFilterCard";
+import ProductListCard from "./components/ProductListCard";
+import "./index.css"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header/>
       <main className="app-container">
         <ProductFilterCard/>
+        <ProductListCard/>
       </main>
     </>
   );

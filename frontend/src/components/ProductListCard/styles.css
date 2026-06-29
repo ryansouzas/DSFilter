@@ -1,0 +1,10 @@
+.product-list-card{
+    background-color: var(--app-color-bg-tertiary);
+    width: 100%;
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

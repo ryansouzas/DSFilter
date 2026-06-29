@@ -1,0 +1,17 @@
+.product-list-item {
+    border: 1px solid var(--app-color-bg-primary);
+    border-radius: 5px;
+    padding: 10px 12px;
+}
+
+.product-list-item h3 {
+    color: var(--app-color-font-secondary);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.product-list-item p {
+    color: var(--app-color-font-tertiary);
+    font-size: 16px;
+    font-weight: 700;
+}

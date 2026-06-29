@@ -21,6 +21,7 @@
     font-size: 16px;
     border-radius: 4px;
     padding: 8px;
+    outline: none;
 }
 
 .product-filter-form input::placeholder{
