@@ -1,0 +1,10 @@
+.app-header{
+    background-color: var(--app-color-bg-primary);
+    color: var(--app-color-font-primary);
+}
+
+.app-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

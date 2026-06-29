@@ -26,17 +26,14 @@ main {
 }
 
 /*-----------------------------------------------------------------*/
-/* header styles */
-
-header {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-}
-
-/*-----------------------------------------------------------------*/
 /* generic styles */
+
+.app-container{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding:  20px;
+}
 
 .mt-40 {
   margin-top: 40px;
@@ -74,7 +71,7 @@ header {
 }
 
 
-.btn-blue {
+.btn-green {
   border: none;
   background-color: var(--app-color-btn-primary);
   color: var(--app-color-font-primary);
