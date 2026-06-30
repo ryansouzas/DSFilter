@@ -1,15 +1,13 @@
 import Header from "./components/Header";
-import ProductFilterCard from "./components/ProductFilterCard";
-import ProductListCard from "./components/ProductListCard";
-import "./index.css"
+import ListingBody from "./components/ListingBody";
+import "./index.css";
 
 function App() {
   return (
     <>
       <Header/>
       <main className="app-container">
-        <ProductFilterCard/>
-        <ProductListCard/>
+        <ListingBody/>
       </main>
     </>
   );
