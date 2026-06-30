@@ -6,7 +6,7 @@ type Props = {
 };
 
 export default function ProductFilterCard({ onFilter }: Props) {
-    
+
     const [minPrice, setMinPrice] = useState("");
     const [maxPrice, setMaxPrice] = useState("");
 
@@ -17,22 +17,24 @@ export default function ProductFilterCard({ onFilter }: Props) {
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         onFilter(Number(minPrice), Number(maxPrice));
+        setMinPrice("");
+        setMaxPrice("");
     }
-    
+
     return (
         <div className="app-container product-filter-card">
             <form className="product-filter-form" onSubmit={handleSubmit}>
-                <input 
-                type="text" 
-                placeholder="Preço mínimo"
-                value = {minPrice}
-                onChange={handleChange} />
-                <input 
-                type="text" 
-                placeholder="Preço máximo"
-                value={maxPrice}
-                onChange={(event) => setMaxPrice(event.target.value)} />
-                <button type="submit"  className="app-btn btn-green">Filtrar</button>
+                <input
+                    type="text"
+                    placeholder="Preço mínimo"
+                    value={minPrice}
+                    onChange={handleChange} />
+                <input
+                    type="text"
+                    placeholder="Preço máximo"
+                    value={maxPrice}
+                    onChange={(event) => setMaxPrice(event.target.value)} />
+                <button type="submit" className="app-btn btn-green">Filtrar</button>
             </form>
         </div>
     );
