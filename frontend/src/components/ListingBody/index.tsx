@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { ProductDTO } from "../../models/product";
 import { findByPrice } from "../../services/product-service";
 import ProductFilterCard from "../ProductFilterCard";
+import ProductListCard from "../ProductListCard";
 
 export default function ListingBody() {
 
@@ -12,10 +13,12 @@ export default function ListingBody() {
         setProducts(filteredProducts);
         console.log("Filtered products:", filteredProducts);
     }
+    
 
     return (
         <div>
             <ProductFilterCard onFilter={handleFilter}/>
+            <ProductListCard products={products} />
         </div>
     );
 }
